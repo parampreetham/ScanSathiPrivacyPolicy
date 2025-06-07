@@ -65,12 +65,13 @@
   </ul>
 
   <h2>4. Permissions and Image Access</h2>
-  <p>Scan Sathi does <strong>not request camera or gallery permissions at installation time</strong>. Instead, images are accessed via modern Android components like:</p>
+  <p>Scan Sathi requires the following permissions:</p>
   <ul>
-    <li><code>ActivityResultContracts.TakePicture()</code></li>
-    <li><code>ActivityResultContracts.PickVisualMedia()</code></li>
+    <li>Camera: To scan documents using your phone's camera.</li>
+    <li>Storage/Media Access: To save the scanned documents to your device.</li>
+    <li>Internet (optional): Only used when sharing documents or downloading updates. No user data is sent online.</li>
   </ul>
-  <p>These components ask for temporary permission only when the user takes or selects an image. We respect your privacy and handle these images only during your usage session.</p>
+  <p>We respect your privacy and handle these images only during your usage session.</p>
 
   <h2>5. Storage and Sharing</h2>
   <p>If you choose to save a processed image, it is saved to your device's local storage or gallery. If you choose to share it, it is shared using your device’s standard sharing interface (e.g., WhatsApp, email, etc.).</p>
